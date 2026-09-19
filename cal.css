@@ -1,0 +1,59 @@
+/* cal.css */
+
+
+
+body {
+  background: radial-gradient(circle at top left, #6a11cb, #2575fc, #abed2f);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#cal {
+  background: rgba(30, 30, 60, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4),
+              0 0 20px rgba(121, 121, 146, 0.6);
+  padding: 25px;
+}
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#cal-button {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.button {
+  background-color: #3a3a5c;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(90, 90, 210, 0.3);
+}
+
+.button:hover {
+  background-color: #5a5ad1;
+  box-shadow: 0 0 20px #5a5ad1, 0 0 40px #5a5ad1;
+  transform: scale(1.08);
+}
+.button:active {
+  box-shadow: 0 0 15px #abed2f;
+  transform: scale(0.95);
+}
